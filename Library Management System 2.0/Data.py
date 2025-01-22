@@ -14,9 +14,21 @@ class ReservaionStatus(Enum):
     Canceled = 'Canceled'
     None = 'None'
 
+class BookStatus(Enum):
+    Available = 'Available'
+    Reserved = 'Reserved'
+    Loaned = 'Loaned'
+    Lost = 'Lost'
 
-
-
+class BookFormat(Enum):
+    Hardcover = 'Hardcover'
+    Paperback = 'Paperback'
+    Audiobook = 'Audiobook'
+    Ebook = 'Ebook'
+    Newspaper = 'Newspaper'
+    Magazine = 'Magazine'
+    Journal = 'Journal'
+    
 class Address:
     def __init__(self, streetAddress: str, city :str, state:str, zipcode:str, country:str):
         self.streetAddress = streetAddress
